@@ -121,7 +121,8 @@
     height: 6px;
 }
 .header__img {
-    background-color: #979faa;
+    /* background-color: #979faa; */
+    background-image: url(/asset/pic/anh-nen-r11415.jpg);
     border-top: 1.5px solid white;
     height: 144px;
     width: 100%;
@@ -184,6 +185,7 @@
 
 /* footer */
 .footer {
+    margin-top: 5px;
     height: 150px;
     width: 100%;
     background-color: var(--bg-color);
@@ -328,7 +330,6 @@
 }
 .main__topread {
     grid-column: 2/2;
-    padding: 5px 0;
 }
 .main__sidebar {
     grid-column: 3/3;
@@ -354,17 +355,16 @@
     background-color: var(--bg-main);
     font-size: 13px;
 }
-.container__search-droplist {
-    padding: 2px 10px;
-}
-.dropdown {
-    position: relative;
+.container__search-list {
+    margin: 2px 10px;
+    border: none;
+    outline: none;
 }
 .container__search-input {
     flex: 1;
     border: none;
     outline: none;
-    font-size: 14;
+    font-size: 14px;
 }
 .container__search-btn {
     background-color: #2F6707;
@@ -378,10 +378,80 @@
 }
 
 
-.container__slide {
+.container__bookslide {
     margin-top: 5px;
     width: 100%;
-    height: 270px;
+    max-width: 545px;
+    /* height: 270px; */
     background-color: var(--bg-main);
     border-radius: 5px;
+    padding: 20px 10px;
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-gap: 5px;
+    grid-auto-flow: column;
+    grid-auto-columns: 20%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+}
+.container__bookslide-item {
+    /* max-width: 120px; */
+    background-color: #faf7ec;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+    scroll-snap-align: start;
+}
+.container__bookslide-item p {
+    font-size: 14px;
+}
+
+
+.container__news {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.notification {
+    flex: 1;
+}
+.newsevents {
+    margin-left: 5px;
+    flex: 1;
+}
+
+.boardmsg {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: var(--bg-main);
+    border-radius: 5px;
+    position: relative;
+}
+.boardmsg__head {
+    padding: 5px 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--text-white);
+    background-color: var(--bg4-color);
+}
+.boardmsg__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.boardmsg__top img {
+    height: 80px;
+
+}
+.boardmsg__top a, 
+.boardmsg__item a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 13px;
+    line-height: 25px;
+    margin-left: 20px;
 }

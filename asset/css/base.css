@@ -1,12 +1,16 @@
 :root {
     --white-color: #fff;
     --black-color: #000;
+
     --text-color:#1B77CC;
     --text-white:#F8F8F9;
+
     --bg-color:#28528A;
     --bg2-color:#88BBEE;
     --bg3-color:#5F9BEF;
+    --bg4-color:#3D7FC6;
     --bg-main: white;
+    
     --red-color: #ea1c1c;
     --logo-color:rgb(228, 16, 243);
     --name: "Thư viện Đại học Măng Non";
