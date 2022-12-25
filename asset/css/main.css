@@ -223,8 +223,8 @@
 .logo2__2,
 .logo2__3 {
     position: absolute;
-    top: 40%;
-    right: 0;
+    top: 20%;
+    left: 30px;
     height: 50px;
     width: 50px;
     border-radius: 100%;
@@ -402,6 +402,7 @@
     padding: 20px 10px;
     border-radius: 10px;
     scroll-snap-align: start;
+    overflow: hidden;
 }
 .container__bookslide-item p {
     font-size: 14px;
